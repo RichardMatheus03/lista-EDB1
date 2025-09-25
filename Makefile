@@ -17,8 +17,8 @@ test_c:
 	./test_c
 
 test_cpp:
-	$(CXX) $(CXXFLAGS) $(SRCS_CPP) test_cpp/test_algorithms.cpp -o test_cpp
-	./test_cpp
+	$(CXX) $(CXXFLAGS) $(SRCS_CPP) test_cpp/test_algorithms.cpp -o test_cpp/output/test_algorithms
+	./test_cpp/output/test_algorithms
 
 clean:
-	rm -f test_c test_cpp
+	rm -f test_c test_cpp/output/test_algorithms

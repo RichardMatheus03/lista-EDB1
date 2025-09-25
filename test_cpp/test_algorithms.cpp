@@ -3,7 +3,6 @@
 #include <vector>
 // #include "busca_seq_ordenada.hpp"
 #include "../include_cpp/busca_binaria.hpp"
-#include "../src_cpp/busca_binaria.cpp"
 // #include "recursao.hpp"
 
 #define RUN_TEST(name, expr, expected)                                 \
