@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "../include_cpp/busca_seq_ordenada.hpp"
+
 // Função Bubble Sort para ordenar o vetor - (implementação pronta)
 void bubble_sort(std::vector<int>& arr) {
     int n = arr.size();

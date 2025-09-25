@@ -1,10 +1,10 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-// #include "busca_seq_ordenada.hpp"
+
 #include "../include_cpp/busca_binaria.hpp"
 #include "../include_cpp/busca_seq_ordenada.hpp"
-// #include "recursao.hpp"
+#include "../include_cpp/recursao.hpp"
 
 #define RUN_TEST(name, expr, expected)                                 \
     do {                                                               \
@@ -25,9 +25,7 @@ int main() {
     //Exemplo de chamada da macro RUN_TEST
     RUN_TEST("Busca binária para primeira versão inválida", busca_binaria(arr1), 4);
     RUN_TEST("Busca sequencial passando arr não ordenado", conta_especialidades_distintas(arr2), 5);
-    // RUN_TEST("Busca ordenada", conta_especialidades_distintas(), 0);
-    // RUN_TEST("Busca binaria", busca_binaria(), 0);
-    // RUN_TEST("Recursao", recursao(), 0);
+    RUN_TEST("Recursão contando caracteres", recursao("strawberry", 'r'), 3); // https://www.reddit.com/r/ChatGPT/comments/1dngbhx/how_many_rs_are_there_in_strawberry/?tl=pt-br
 
     return 0;
 }
