@@ -1,9 +1,10 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-#include "busca_seq_ordenada.hpp"
-#include "busca_binaria.hpp"
-#include "recursao.hpp"
+// #include "busca_seq_ordenada.hpp"
+#include "../include_cpp/busca_binaria.hpp"
+#include "../src_cpp/busca_binaria.cpp"
+// #include "recursao.hpp"
 
 #define RUN_TEST(name, expr, expected)                                 \
     do {                                                               \
@@ -16,16 +17,14 @@
 int main() {
 
     //Vetor desordenado <POPULAR>
-    std::vector<int> arr1 = {};
-    //Tamanho do vetor <ALTERAR>
-    int n1 = 0;
+    std::vector<int> arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
     //Vetor ordenado <POPULAR>
     std::vector<int> arr2 = {};
-    //Tamanho do vetor <ALTERAR>
-    int n2 = 0;
+
 
     //Eexemplo de chamada da macro RUN_TEST
-    //RUN_TEST("Titulo do teste", nome_da_funcao(entradas das funcao), resposta_esperada);
+    RUN_TEST("Busca binária para primeira versão inválida", busca_binaria(arr1), 4);
     // RUN_TEST("Busca ordenada", conta_especialidades_distintas(), 0);
     // RUN_TEST("Busca binaria", busca_binaria(), 0);
     // RUN_TEST("Recursao", recursao(), 0);

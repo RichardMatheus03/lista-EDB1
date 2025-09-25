@@ -8,7 +8,7 @@ bool is_bad_version(int version) {
     return version >= bad_version;
 }
 
-int busca_primeira_ruim(const std::vector<int>& arr_ordenado) {
+int busca_binaria(const std::vector<int>& arr_ordenado) {
     int esquerda = 0;
     int direita = arr_ordenado.size() - 1;
     int resultado = -1;
@@ -24,19 +24,5 @@ int busca_primeira_ruim(const std::vector<int>& arr_ordenado) {
         }
     }
 
-    return resultado;
-}
-
-int main() {
-    std::vector<int> versoes = {1, 2, 3, 4, 5, 6, 7};
-
-    int indice = busca_primeira_ruim(versoes);
-
-    if (indice != -1) {
-        std::cout << "Primeira versão ruim: " << versoes[indice] << std::endl;
-    } else {
-        std::cout << "Nenhuma versão ruim encontrada." << std::endl;
-    }
-
-    return 0;
+    return arr_ordenado[resultado];
 }
